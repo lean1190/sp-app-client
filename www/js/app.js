@@ -59,17 +59,7 @@ function config($stateProvider, $urlRouterProvider) {
         }
     })
 
-    /*.state("app.playlists", {
-        url: "/playlists",
-        views: {
-            "menuContent": {
-                templateUrl: "templates/playlists.html",
-                controller: "PlaylistsCtrl"
-            }
-        }
-    })
-
-    .state("app.single", {
+    /*.state("app.single", {
         url: "/playlists/:playlistId",
         views: {
             "menuContent": {
@@ -87,17 +77,17 @@ function config($stateProvider, $urlRouterProvider) {
                 controller: "UserFindAllController as vm"
             }
         }
-    });
+    })
 
-    /*.state("app.single", {
-        url: "/users/:userId",
+    .state("app.user", {
+        url: "/users/:id",
         views: {
             "menuContent": {
-                templateUrl: "templates/playlist.html",
-                controller: "UserFindByIdCtrl"
+                templateUrl: "templates/user.html",
+                controller: "UserFindByIdController as vm"
             }
         }
-    });*/
+    });
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise("/app/users");

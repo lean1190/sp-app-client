@@ -17,17 +17,24 @@
 
         var service = {
             getResource: getResource,
-            findAllUsers: findAllUsers
+            findAllUsers: findAllUsers,
+            findUserById: findUserById
         };
 
         return service;
 
         function getResource() {
-            return $resource(resourceEndpoint, {});
+            return $resource(resourceEndpoint, {id: "@_id"});
         }
 
         function findAllUsers() {
             return getResource().query().$promise;
+        }
+
+        function findUserById(userId) {
+            var a = getResource().get(userId);
+            console.log(":: lpm", a);
+            return a.$promise;
         }
     }
 

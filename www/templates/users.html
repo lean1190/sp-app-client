@@ -1,7 +1,7 @@
 <ion-view view-title="Users">
     <ion-content>
         <ion-list>
-            <ion-item ng-repeat="user in vm.users" href="#/app/users/{{user.id}}">
+            <ion-item ng-repeat="user in vm.users" href="#/app/users/{{user._id}}">
                 {{user.name}}
             </ion-item>
         </ion-list>
