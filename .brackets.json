@@ -2,6 +2,7 @@
     "jscodehints.detectedExclusions": [
         "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/emulator.js",
         "/home/leandro/git/sp-app-client/www/js/user/UserFactory.js",
-        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/run.js"
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/run.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/appinfo.js"
     ]
 }

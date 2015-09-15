@@ -1,5 +1,30 @@
 <ion-view view-title="{{vm.user.name}}">
     <ion-content>
-        <h1>{{vm.user.name}}</h1>
+        <div class="item item-avatar">
+            <img src="{{vm.user.profilePhoto}}" alt="{{vm.user.name}}">
+            <h2>{{vm.user.name}}</h2>
+            <p>{{vm.user.email}}</p>
+        </div>
+
+        <div class="item item-icon-left">
+            <i class="icon ion-ios-telephone-outline"></i> {{vm.user.phone}}
+        </div>
+        <div class="item item-icon-left">
+            <i class="icon ion-ios-clock-outline"></i> Horarios
+            <!--<div ng-repeat="scheduleDay in vm.user.schedule" class="row">
+                <div class="col">
+                    <h2>{{scheduleDay.day}}</h2>
+                </div>
+                <div class="col">
+                    <h2>{{scheduleDay.startHour}}</h2>
+                </div>
+                <div class="col">
+                    <h2>{{scheduleDay.endHour}}</h2>
+                </div>
+            </div>-->
+            <p ng-repeat="scheduleDay in vm.user.schedule" class="schedule-day">
+                {{scheduleDay.day}} de {{scheduleDay.startHour}} a {{scheduleDay.endHour}}
+            </p>
+        </div>
     </ion-content>
 </ion-view>

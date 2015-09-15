@@ -32,9 +32,7 @@
         }
 
         function findUserById(userId) {
-            var a = getResource().get(userId);
-            console.log(":: lpm", a);
-            return a.$promise;
+            return getResource().get({id: userId}).$promise;
         }
     }
 

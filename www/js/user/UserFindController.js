@@ -17,18 +17,16 @@
 
         activate($stateParams.id);
 
-        function activate(user) {
-            return findUserById(user).then(function () {
+        function activate(userId) {
+            return findUserById(userId).then(function () {
                 console.log('--> Activate findUserById');
             });
         }
 
-        function findUserById(user) {
-            return UserFactory.findUserById(user).then(function (user) {
-                console.log(":: GET USER: ", user);
+        function findUserById(userId) {
+            return UserFactory.findUserById(userId).then(function (user) {
                 vm.user = user;
             }, function (err) {
-                console.log(":: PROMISE REJECTED");
                 console.log(err);
             });
         }

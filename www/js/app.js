@@ -34,40 +34,13 @@ function config($stateProvider, $urlRouterProvider) {
     "use strict";
 
     $stateProvider
-        .state("app", {
-            url: "/app",
-            abstract: true,
-            templateUrl: "templates/menu.html",
-            controller: "AppCtrl"
-        })
 
-    .state("app.search", {
-        url: "/search",
-        views: {
-            "menuContent": {
-                templateUrl: "templates/search.html"
-            }
-        }
+    .state("app", {
+        url: "/app",
+        abstract: true,
+        templateUrl: "templates/menu.html",
+        controller: "AppCtrl"
     })
-
-    .state("app.browse", {
-        url: "/browse",
-        views: {
-            "menuContent": {
-                templateUrl: "templates/browse.html"
-            }
-        }
-    })
-
-    /*.state("app.single", {
-        url: "/playlists/:playlistId",
-        views: {
-            "menuContent": {
-                templateUrl: "templates/playlist.html",
-                controller: "PlaylistCtrl"
-            }
-        }
-    });*/
 
     .state("app.users", {
         url: "/users",
