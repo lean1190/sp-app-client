@@ -1,8 +1,14 @@
 {
     "jscodehints.detectedExclusions": [
         "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/emulator.js",
-        "/home/leandro/git/sp-app-client/www/js/user/UserFactory.js",
         "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/run.js",
-        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/appinfo.js"
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/appinfo.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/exec.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/cordova_plugins.js",
+        "/home/leandro/git/sp-app-client/platforms/android/platform_www/cordova.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-console/www/console-via-logger.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/check_reqs.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-console/www/logger.js",
+        "/home/leandro/git/sp-app-client/www/js/user/UserFactory.js"
     ]
 }

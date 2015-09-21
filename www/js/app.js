@@ -60,6 +60,16 @@ function config($stateProvider, $urlRouterProvider) {
                 controller: "UserFindByIdController as vm"
             }
         }
+    })
+
+    .state("app.week", {
+        url: "/week",
+        views: {
+            "menuContent": {
+                templateUrl: "templates/week.html",
+                controller: "WeekFindAllSchedulesController as vm"
+            }
+        }
     });
 
     // if none of the above states are matched, use this as the fallback

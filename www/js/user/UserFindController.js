@@ -19,7 +19,7 @@
 
         function activate(userId) {
             return findUserById(userId).then(function () {
-                console.log('--> Activate findUserById');
+                console.log('--> User found!');
             });
         }
 

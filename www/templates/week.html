@@ -1,0 +1,25 @@
+<ion-view view-title="Semana">
+    <ion-content>
+        <ion-list>
+            <!--<ion-item ng-repeat="day in vm.days">
+                <p>{{day}}</p>
+            </ion-item>-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th ng-repeat="hour in vm.hours">
+                            {{hour}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="day in vm.days">
+                        <td>{{day}}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </ion-list>
+    </ion-content>
+</ion-view>
