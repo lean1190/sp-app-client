@@ -9,6 +9,27 @@
         "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-console/www/console-via-logger.js",
         "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/check_reqs.js",
         "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-console/www/logger.js",
-        "/home/leandro/git/sp-app-client/www/js/user/UserFactory.js"
+        "/home/leandro/git/sp-app-client/www/js/user/UserFactory.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-device/www/device.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/cordova.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/spawn.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/device.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/build.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/android_sdk_version.js",
+        "/home/leandro/git/sp-app-client/platforms/android/cordova/lib/log.js",
+        "/home/leandro/git/sp-app-client/platforms/*",
+        "/home/leandro/git/sp-app-client/gulpfile.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/plugins/cordova-plugin-whitelist/whitelist.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/js/app.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/js/controllers.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/lib/ionic/js/ionic.bundle.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/lib/ionic/js/ionic.min.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/lib/ionic/js/ionic.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/lib/ionic/js/ionic-angular.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/lib/ionic/js/ionic-angular.min.js",
+        "/home/leandro/git/sp-app-client/platforms/android/assets/www/lib/ionic/js/ionic.bundle.min.js"
     ]
 }

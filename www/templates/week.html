@@ -1,25 +1,20 @@
 <ion-view view-title="Semana">
     <ion-content>
-        <ion-list>
-            <!--<ion-item ng-repeat="day in vm.days">
-                <p>{{day}}</p>
-            </ion-item>-->
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th ng-repeat="hour in vm.hours">
-                            {{hour}}
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="day in vm.days">
-                        <td>{{day}}</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </ion-list>
+        <div class="row header">
+            <div class="col"></div>
+            <div ng-repeat="hour in vm.hours" class="col">
+                {{::hour}}
+            </div>
+        </div>
+        <div class="row" ng-repeat='(day, hours) in vm.schedules'>
+            <div class="col">
+                {{::day}}
+            </div>
+            <div class="col" ng-repeat="(hour, users) in hours">
+                <span ng-repeat="user in users">
+                    <img src="{{::user.profilePhoto}}" alt="{{::user.name}}" style="width: 30px; border-radius:100px;" />
+                </span>
+            </div>
+        </div>
     </ion-content>
 </ion-view>
