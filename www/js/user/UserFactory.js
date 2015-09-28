@@ -12,7 +12,8 @@
     UserFactory.$inject = ["$resource", "$http"];
 
     function UserFactory($resource, $http) {
-        var urlBase = "http://localhost:3000",
+        var urlBase = "https://warm-ocean-7615.herokuapp.com",
+            // urlBase = "http://localhost:3000"
             usersEndpoint = urlBase + "/users/:id",
             schedulesEndpoint = urlBase + "/users/:id/schedule";
 
