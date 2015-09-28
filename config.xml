@@ -4,7 +4,7 @@
     <description>
         An Ionic Framework and Cordova project.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
+    <author email="leandro.vilas@fluxit.com.ar" href="http://google.com">
       Ionic Framework Team
     </author>
     <content src="index.html" />
@@ -39,6 +39,5 @@
         <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
-    <plugin name="org.apache.cordova.inappbrowser" spec="^0.6.0" />
     <plugin name="cordova-plugin-inappbrowser" spec="^1.0.1" />
 </widget>

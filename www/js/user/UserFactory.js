@@ -9,30 +9,42 @@
         .module("sp-app-client.factories")
         .factory("UserFactory", UserFactory);
 
-    UserFactory.$inject = ["$resource"];
+    UserFactory.$inject = ["$resource", "$http"];
 
-    function UserFactory($resource) {
+    function UserFactory($resource, $http) {
         var urlBase = "http://localhost:3000",
-            resourceEndpoint = urlBase + "/users/:id";
+            usersEndpoint = urlBase + "/users/:id",
+            schedulesEndpoint = urlBase + "/users/:id/schedule";
 
         var service = {
-            getResource: getResource,
+            getUsersResource: getUsersResource,
             findAllUsers: findAllUsers,
-            findUserById: findUserById
+            findUserById: findUserById,
+            findAllUsersSchedule: findAllUsersSchedule
         };
 
         return service;
 
-        function getResource() {
-            return $resource(resourceEndpoint, {id: "@_id"});
+        function getUsersResource() {
+            return $resource(usersEndpoint, {id: "@_id"});
+        }
+
+        function getSchedulesResource() {
+            return $resource(schedulesEndpoint, {id: "@_id"});
         }
 
         function findAllUsers() {
-            return getResource().query().$promise;
+            return getUsersResource().query().$promise;
         }
 
         function findUserById(userId) {
-            return getResource().get({id: userId}).$promise;
+            return getUsersResource().get({id: userId}).$promise;
+        }
+
+        function findAllUsersSchedule() {
+            return $http.get(urlBase + "/users/schedule/all").then(function(result) {
+                return result.data;
+            });
         }
     }
 

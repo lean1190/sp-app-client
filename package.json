@@ -1,7 +1,7 @@
 {
-  "name": "sp-app-client",
-  "version": "1.0.0",
-  "description": "sp-app-client: An Ionic project",
+  "name": "sp-app",
+  "version": "0.0.1",
+  "description": "sp-app",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",

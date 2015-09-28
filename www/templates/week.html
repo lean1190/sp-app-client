@@ -11,8 +11,8 @@
                 {{::day}}
             </div>
             <div class="col" ng-repeat="(hour, users) in hours">
-                <span ng-repeat="user in users">
-                    <img src="{{::user.profilePhoto}}" alt="{{::user.name}}" style="width: 30px; border-radius:100px;" />
+                <span class="schedule-user-container" ng-repeat="user in users">
+                    <img src="{{::user.profilePhoto}}" alt="{{::user.name}}" />
                 </span>
             </div>
         </div>
