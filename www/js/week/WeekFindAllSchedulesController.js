@@ -13,16 +13,15 @@
 
     function WeekFindAllSchedulesController(UserFactory) {
         var vm = this;
-        // Arreglo de dias
         vm.schedules = {};
-        vm.days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
-        vm.hours = [8, 9, 11];
+        //vm.days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
 
         activate();
 
         function activate() {
             return UserFactory.findAllUsersSchedule().then(function (schedules) {
                 vm.schedules = schedules;
+                vm.hours = [8, 9, 11];
             },
             function (err) {
                 console.log(err);
