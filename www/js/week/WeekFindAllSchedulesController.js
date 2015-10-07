@@ -14,14 +14,20 @@
     function WeekFindAllSchedulesController(UserFactory) {
         var vm = this;
         vm.schedules = {};
-        //vm.days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+        vm.hours = [];
 
         activate();
 
         function activate() {
             return UserFactory.findAllUsersSchedule().then(function (schedules) {
                 vm.schedules = schedules;
-                vm.hours = [8, 9, 11];
+                for (var day in schedules) {
+                    for(var hour in schedules[day]) {
+                        vm.hours.push(hour);
+                    }
+                    // Only 1 loop
+                    break;
+                }
             },
             function (err) {
                 console.log(err);

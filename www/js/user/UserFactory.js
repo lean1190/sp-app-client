@@ -13,8 +13,8 @@
 
     function UserFactory($resource, $http) {
         // --> PRODUCTION
-        // urlBase = "https://warm-ocean-7615.herokuapp.com",
-        var urlBase = "http://localhost:3000",
+        var urlBase = "https://warm-ocean-7615.herokuapp.com",
+        //var urlBase = "http://localhost:3000",
             usersEndpoint = urlBase + "/users/:id",
             schedulesEndpoint = urlBase + "/users/:id/schedule";
 

@@ -1,4 +1,7 @@
-/* Empty. Add your own CSS if you like */
+/*  ======================
+    ======== WEEK ========
+    ======================
+*/
 
 .schedule-day {
     margin-top: 5px;
@@ -22,4 +25,14 @@
 .schedule-user-container img {
     width: 30px;
     border-radius:100px;
+}
+
+
+/*  ======================
+    ======== USER ========
+    ======================
+*/
+
+.phone-link {
+    color: black;
 }
