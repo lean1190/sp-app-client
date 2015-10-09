@@ -3,7 +3,7 @@
 /* globals window, angular, cordova, StatusBar */
 
 angular
-    .module("sp-app-client", ["ionic", "ngResource", "sp-app-client.controllers", "sp-app-client.factories"])
+    .module("sp-app-client", ["ionic", "ngResource", "angularSpinners", "sp-app-client.controllers", "sp-app-client.factories"])
     .run(run)
     .config(config);
 

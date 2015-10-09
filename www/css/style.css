@@ -1,3 +1,28 @@
+/**/
+
+ion-content {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.spinner-wrapper {
+    width: 70px;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.spinner-wrapper svg {
+    width: 65px;
+    height: 65px;
+}
+
+
 /*  ======================
     ======== WEEK ========
     ======================
@@ -14,7 +39,8 @@
     text-align: center;
 }
 
-.col:first-child, .row:first-child {
+.col:first-child,
+.row:first-child {
     border-left: none;
 }
 
@@ -24,7 +50,7 @@
 
 .schedule-user-container img {
     width: 30px;
-    border-radius:100px;
+    border-radius: 100px;
 }
 
 

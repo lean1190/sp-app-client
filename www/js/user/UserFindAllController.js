@@ -9,23 +9,26 @@
         .module("sp-app-client.controllers")
         .controller("UserFindAllController", UserFindAllController);
 
-    UserFindAllController.$inject = ["UserFactory"];
+    UserFindAllController.$inject = ["UserFactory", "spinnerService"];
 
-    function UserFindAllController(UserFactory) {
+    function UserFindAllController(UserFactory, spinnerService) {
         var vm = this;
         vm.users = [];
-
-        activate();
+        vm.loading = true;
+        setTimeout(function () {
+            activate();
+        }, 3000);
 
         function activate() {
             return findAllUsers().then(function () {
-                console.log('--> Activate findAllUsers');
+                console.log("--> Activate findAllUsers");
             });
         }
 
         function findAllUsers() {
             return UserFactory.findAllUsers().then(function (users) {
                 vm.users = users;
+                vm.loading = false;
             }, function (err) {
                 console.log(err);
             });
