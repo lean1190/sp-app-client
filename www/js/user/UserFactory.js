@@ -9,12 +9,12 @@
         .module("sp-app-client.factories")
         .factory("UserFactory", UserFactory);
 
-    UserFactory.$inject = ["$resource", "$http"];
+    UserFactory.$inject = ["$resource", "$http", "apiEndpoint"];
 
-    function UserFactory($resource, $http) {
+    function UserFactory($resource, $http, apiEndpoint) {
         // --> PRODUCTION
-        var urlBase = "https://warm-ocean-7615.herokuapp.com",
-        //var urlBase = "http://localhost:3000",
+        //var urlBase = "https://warm-ocean-7615.herokuapp.com",
+        var urlBase = "http://localhost:3000",
             usersEndpoint = urlBase + "/users/:id",
             schedulesEndpoint = urlBase + "/users/:id/schedule";
 

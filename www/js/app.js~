@@ -5,11 +5,11 @@
 (function() {
     angular
         .module("sp-app-client", [
-                "ionic",
-                "ngResource",
-                "angularSpinners",
-                "environment-constants",
-                "sp-app-client.controllers",
+                "ionic", 
+                "ngResource", 
+                "angularSpinners", 
+                "environment-constants", 
+                "sp-app-client.controllers", 
                 "sp-app-client.factories"
         ])
         .run(run)

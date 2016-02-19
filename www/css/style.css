@@ -6,15 +6,16 @@ ion-content {
     transform-style: preserve-3d;
 }
 
+.scroll {
+    height: 100%;
+}
+
 .spinner-wrapper {
     width: 70px;
     margin: 0px auto;
     text-align: center;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
+    top: 40%;
 }
 
 .spinner-wrapper svg {
