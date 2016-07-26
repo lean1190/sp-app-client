@@ -11,12 +11,12 @@
 
     UserFactory.$inject = ["$resource", "$http", "apiEndpoint"];
 
-    function UserFactory($resource, $http, apiEndpoint) {
+    function UserFactory($resource, $http) {
         // --> PRODUCTION
-        //var urlBase = "https://warm-ocean-7615.herokuapp.com",
-        var urlBase = "http://localhost:3000",
-            usersEndpoint = urlBase + "/users/:id",
-            schedulesEndpoint = urlBase + "/users/:id/schedule";
+        var urlBase = "https://warm-ocean-7615.herokuapp.com",
+        // --> LOCAL
+        //var urlBase = "http://localhost:3000",
+            usersEndpoint = urlBase + "/users/:id";            
 
         var service = {
             getUsersResource: getUsersResource,
@@ -29,10 +29,6 @@
 
         function getUsersResource() {
             return $resource(usersEndpoint, {id: "@_id"});
-        }
-
-        function getSchedulesResource() {
-            return $resource(schedulesEndpoint, {id: "@_id"});
         }
 
         function findAllUsers() {

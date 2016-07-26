@@ -3,6 +3,8 @@
 /* globals window, angular, cordova, StatusBar */
 
 (function() {
+    "use strict";
+
     angular
         .module("sp-app-client", [
                 "ionic",
@@ -21,8 +23,6 @@
     angular.module("sp-app-client.factories", []);
 
     function run($ionicPlatform) {
-        "use strict";
-
         $ionicPlatform.ready(function () {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
@@ -39,15 +39,13 @@
     }
 
     function config($stateProvider, $urlRouterProvider) {
-        "use strict";
 
         $stateProvider
 
         .state("app", {
             url: "/app",
             abstract: true,
-            templateUrl: "templates/menu.html",
-            controller: "AppCtrl"
+            templateUrl: "templates/menu.html"
         })
 
         .state("app.users", {

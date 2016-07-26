@@ -1,7 +1,7 @@
 <ion-view view-title="{{vm.user.name}}">
     <ion-content>
         <div class="item item-avatar">
-            <img src="{{vm.user.profilePhoto}}" alt="{{vm.user.name}}">
+            <img ng-src="{{vm.user.profilePhoto}}" alt="{{vm.user.name}}">
             <h2>{{::vm.user.name}}</h2>
             <p>{{::vm.user.email}}</p>
         </div>

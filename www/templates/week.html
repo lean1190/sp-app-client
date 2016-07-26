@@ -12,7 +12,7 @@
             </div>
             <div class="col" ng-repeat="(hour, users) in hours">
                 <span class="schedule-user-container" ng-repeat="user in users">
-                    <img src="{{::user.profilePhoto}}" alt="{{::user.name}}" />
+                    <img ng-src="{{::user.profilePhoto}}" alt="{{::user.name}}" />
                 </span>
             </div>
         </div>
